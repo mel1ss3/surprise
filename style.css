@@ -1,0 +1,102 @@
+/* ========================= */
+/* BASE */
+/* ========================= */
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: white;
+}
+
+/* ========================= */
+/* FENÊTRE CENTRALE */
+/* ========================= */
+
+.card {
+  width: 400px;
+  padding: 40px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  animation: pop 0.6s ease-out;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+button {
+  margin-top: 25px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1em;
+  cursor: pointer;
+  background: white;
+  color: #333;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* ========================= */
+/* DÉGRADÉS PAR PAGE */
+/* ========================= */
+
+.page-rose {
+  background: linear-gradient(135deg, #ff9ecf, #ff4f9a);
+}
+
+.page-vert {
+  background: linear-gradient(135deg, #5bd67b, #1f8f4e);
+}
+
+.page-jaune {
+  background: linear-gradient(135deg, #ffe066, #ffb703);
+  color: #333;
+}
+
+.page-rouge {
+  background: linear-gradient(135deg, #ff4d6d, #c9184a);
+}
+
+.page-bleu {
+  background: linear-gradient(135deg, #1b2a4e, #090a1a);
+}
+
+/* ===== COEURS SIMPLES ===== */
+
+.heart {
+  position: fixed;
+  bottom: -20px;
+  font-size: 20px;
+  animation: floatUp 6s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+  to {
+    transform: translateY(-110vh);
+    opacity: 0;
+  }
+}

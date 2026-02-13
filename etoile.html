@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>⭐ Étoile</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>:root { --astro-pos: 45%; }</style>
+</head>
+<body>
+<body class="page-jaune"></body>
+<div class="card">
+
+<div class="container">
+  <p> Click on the star</p>
+  <div id="star" style="font-size:120px; cursor:pointer;">⭐</div>
+  <p id="love"></p>
+
+  <button onclick="location.href='photo.html'">Again 💛</button>
+</div>
+</div>
+
+<script>
+  document.getElementById("star").onclick = () => {
+    document.getElementById("love").textContent = "To you I am nothing more than a fox like a hundred thousand other foxes. But if you tame me, then we shall need each other. To me, you will be unique in all the world. To you, I shall be unique in all the world.🦊👱";
+  };
+</script>
+
+</body>
+</html>
